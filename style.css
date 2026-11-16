@@ -1,0 +1,162 @@
+body {
+    background-color: #fdfdfd; 
+    color: #2b2b2b; 
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background-color: #8b0000; 
+    width: 0%;
+    z-index: 9999;
+    transition: width 0.1s ease;
+}
+
+header {
+    text-align: center;
+    padding: 5rem 2rem;
+    background-color: #ad7272; 
+    border-bottom: 5px solid #c26e6e; 
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.meta {
+    font-size: 0.9rem;
+    color: #e0e0e0; 
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    margin-bottom: 3.5rem;
+}
+
+h2 {
+    color: #8b0000;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/* Style khusus Abstrak */
+.abstract {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #8b0000;
+    font-style: italic;
+    color: #444444;
+}
+
+.abstract h2 {
+    border-bottom: none;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #111111;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 1rem 0 3rem 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08); /* Shadow-nya gw tipisin biar natural di background putih */
+}
+
+p {
+    margin-bottom: 1.8rem;
+    font-size: 1.15rem;
+    color: #333333;
+}
+
+blockquote {
+    border-left: 3px solid #8b0000;
+    margin: 3rem 0;
+    font-style: italic;
+    color: #555555;
+    font-size: 1.2rem;
+    background: #fafafa;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Style khusus Daftar Pustaka */
+.references ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+    color: #444;
+    font-size: 1.1rem;
+}
+
+.references li {
+    margin-bottom: 0.8rem;
+}
+
+footer {
+    text-align: center;
+    padding: 3rem;
+    font-family: sans-serif;
+    font-size: 0.85rem;
+    color: #888888;
+    margin-top: 5rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Sihir biar layarnya nyesuaiin HP */
+@media (max-width: 768px) {
+    header {
+        padding: 3rem 1.5rem;
+    }
+    
+    h1 {
+        font-size: 1.6rem;
+        line-height: 1.4;
+    }
+    
+    .meta {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+        margin: 2rem auto;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
